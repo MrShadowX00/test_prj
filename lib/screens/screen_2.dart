@@ -67,7 +67,7 @@ class Screen2 extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Container(
                   alignment: Alignment.centerLeft,
-                  child:const Text(
+                  child: const Text(
                     'Section 1 (2)',
                     style: TextStyle(
                       color: Colors.black,
@@ -79,19 +79,18 @@ class Screen2 extends StatelessWidget {
               ),
               Container(
                 height: 150,
-                 child:ListView.builder(
+                child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                      itemCount: 10,
-                      itemBuilder:(BuildContext context, int index){
-                        return singleItemWidget('Horizontal item $index');
-                      }
-                ),
+                    itemCount: 10,
+                    itemBuilder: (BuildContext context, int index) {
+                      return singleItemWidget('Horizontal item $index');
+                    }),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: Container(
                   alignment: Alignment.centerLeft,
-                  child:const Text(
+                  child: const Text(
                     'Section 2 (4)',
                     style: TextStyle(
                       color: Colors.black,
@@ -102,13 +101,12 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child:ListView.builder(
+                child: ListView.builder(
                     scrollDirection: Axis.vertical,
                     itemCount: 10,
-                    itemBuilder:(BuildContext context, int index){
+                    itemBuilder: (context, index) {
                       return singleItemWidget('Horizontal item $index');
-                    }
-                ),
+                    }),
               ),
             ],
           ),
